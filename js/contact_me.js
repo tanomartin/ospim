@@ -38,7 +38,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Su Mensdaje ha sido enviado satisfactorioamente. </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -50,7 +50,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + " it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:me@example.com?Subject=Message_Me from myprogrammingblog.com;>me@example.com</a> ? Sorry for the inconvenience!");
+                    $('#success > .alert-danger').append("<strong>Disculpe " + firstName + " el servidor de correo no esta respondiendo...</strong> Podría por favor enviarme un correo electrónico directamente a <a href='mailto:contacto@ospim.com.ar?Subject=mensaje de ospim.com.ar'>contacto@ospim.com.ar</a>. Disculpe por las molestias ocasionadas");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
