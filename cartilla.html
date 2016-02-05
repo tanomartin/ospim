@@ -28,67 +28,73 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar"
-		role="navigation"></nav>
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" role="navigation">
+	</nav>
 
+	<!-- Page Content -->
 	<div class="container">
 
 		<!-- Page Heading/Breadcrumbs -->
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Intranet Delegaciones</h1>
+				<h1 class="page-header">
+					Cartilla
+				</h1>
 				<ol class="breadcrumb">
 					<li><a href="index.html">Inicio</a></li>
-					<li class="active">Intranet Delegaciones</li>
+					<li class="active">Cartilla</li>
 				</ol>
-				<p>Ingresandro se podrá consultar toda la información para su
-					delegación; también podrá cargar pedidos medicos.</p>
-				<p>Si todavía no obtuvo su USUARIO - CONTRASEÑA comuniquese con
-					la central para obtenerlas</p>
+				<p>Aquí podra descargar el listado completo de profesionales que atienden en nuestra obra social.</p>
 				<br>
 			</div>
 		</div>
 		<!-- /.row -->
 
-		<form method="post" action="#">
+		<!-- Image Header -->
+		<div class="row">
+			<div class="col-lg-12">
+				<img class="img-responsive" src="images/cartilla/inicio.png">
+			</div>
+		</div>
+		<!-- /.row -->
+		
+		<hr>
+		
+		<!-- Call to Action Section -->
+		<div class="well">
 			<div class="row">
-				<div class="col-md-offset-5 col-md-3">
-					<div class="form-login">
-						<h4 style="text-align: center;">Login</h4>
-						<input type="text" id="user" name="user"
-							class="form-control input-sm chat-input" placeholder="usuario" />
-						<br> <input type="password" id="pass" name="pass"
-							class="form-control input-sm chat-input" placeholder="contraseña" />
-						<br>
-						<div class="wrapper" align="center">
-							<span class="group-btn"> <input type="submit"
-								value="Ingresar" class="btn btn-primary btn-md" />
-							</span>
-						</div>
-					</div>
-
+				<div class="col-md-8">
+					<p>
+						Para poder abrir y leer el docuemento deberá tener instaldo algun lector de pdf.
+					</p>
+				</div>
+				<div class="col-md-2">
+					<a class="btn btn-lg btn-default btn-block" href="contact.html">Descargar</a>
 				</div>
 			</div>
-		</form>
-
+		</div>
+		
 		<hr>
-
+		
 		<!-- Footer -->
-		<footer id="footer"> </footer>
+		<footer id="footer">
+		</footer>
 
 	</div>
+	<!-- /.container -->
 
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
-
+	
 	<script>
 		$(function() {
 			$("#navbar").load("include/nav.html");
@@ -97,4 +103,5 @@
 	</script>
 
 </body>
+
 </html>
