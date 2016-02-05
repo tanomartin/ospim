@@ -34,8 +34,8 @@
 <body>
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" role="navigation">
-	</nav>
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar"
+		role="navigation"></nav>
 
 	<!-- Page Content -->
 	<div class="container">
@@ -43,49 +43,43 @@
 		<!-- Page Heading/Breadcrumbs -->
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">
-					Cartilla
-				</h1>
+				<h1 class="page-header">Emergencia</h1>
 				<ol class="breadcrumb">
 					<li><a href="index.html">Inicio</a></li>
-					<li class="active">Cartilla</li>
+					<li class="active">Emergencia</li>
 				</ol>
-				<p>Aquí podra descargar el listado completo de profesionales que atienden en nuestra obra social.</p>
-				<br>
 			</div>
 		</div>
 		<!-- /.row -->
 
-		<!-- Image Header -->
+		<!-- Service Panels -->
+		<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
 		<div class="row">
-			<div class="col-lg-12">
-				<img class="img-responsive" src="images/cartilla/inicio.png">
+			<hr>
+			<div class="col-md-12 col-sm-6">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<span class="fa-stack fa-5x"> <i style="color: red"
+							class="fa fa-circle fa-stack-2x text-primary"></i> <i
+							class="fa fa-plus fa-stack-1x fa-inverse"></i>
+						</span>
+					</div>
+					<div class="panel-body">
+						<h1 style="color: red">
+							<b>Emergencias 24 Hr</b>
+						</h1>
+						<h2>
+							<b>(011) 4381-6920</b>
+						</h2>
+					</div>
+				</div>
 			</div>
 		</div>
-		<!-- /.row -->
 		
 		<hr>
-		
-		<!-- Call to Action Section -->
-		<div class="well">
-			<div class="row">
-				<div class="col-md-8">
-					<p>
-						Para poder abrir y leer el docuemento deberá tener instaldo algun lector de pdf.
-					</p>
-				</div>
-				<div class="col-md-2">
-					<a class="btn btn-lg btn-default btn-block" href="contact.html">Descargar</a>
-				</div>
-			</div>
-		</div>
-		
-		<hr>
-		
-		<!-- Footer -->
-		<footer id="footer">
-		</footer>
 
+		<!-- Footer -->
+		<footer id="footer"> </footer>
 	</div>
 	<!-- /.container -->
 
@@ -94,14 +88,13 @@
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
-	
+
 	<script>
 		$(function() {
 			$("#navbar").load("include/nav.html");
 			$("#footer").load("include/footer.html");
 		});
 	</script>
-
 </body>
 
 </html>
