@@ -29,7 +29,22 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+<script>
+	function activarDescarga() {
+		prov = document.getElementById("provincia").value;
+		if (prov != 0) {
+			document.getElementById("buttonDescargar").className = "btn btn-lg btn-default btn-block";
+			document.getElementById("buttonDescargar").href="files/farmacias/FARMACIAS "+prov+".pdf"; 
+		} else {
+			document.getElementById("buttonDescargar").className = "btn btn-lg btn-default btn-block disabled";
+			document.getElementById("buttonDescargar").href="#"; 
+		}
+	}
+</script>
+
 </head>
+
 
 <body>
 
@@ -69,13 +84,33 @@
 		<!-- Call to Action Section -->
 		<div class="well">
 			<div class="row">
-				<div class="col-md-8">
-					<p>
-						Para poder abrir y leer el documento deberá tener instalado algún lector de pdf.
-					</p>
+				<div class="col-md-6">
+						<p>Para poder abrir y leer el documento deberá tener instalado algún lector de pdf.</p>
+						<select class="form-control" onchange="activarDescarga()" id="provincia">
+						  <option value="0" selected>Seleccione Provincia</option>
+						  <option value="CABA">CABA</option>
+						  <option value="BS AS">BUENOS AIRES</option>
+						  <option value="GBA">GBA</option>	  
+						  <option value="CHACO">CHACO</option>
+						  <option value="CHUBUT">CHUBUT</option>
+						  <option value="CHACO">CHACO</option>
+						  <option value="CORDOBA">CORDOBA</option>
+						  <option value="CORRIENTES">CORRIENTES</option>
+						  <option value="FORMOSA">FORMOSA</option> 
+						  <option value="MENDOZA">MENDOZA</option>      
+						  <option value="NEUQUEN">NEUQUEN</option>
+						  <option value="RIO NEGRO">RIO NEGRO</option>
+						  <option value="SALTA">SALTA</option>
+						  <option value="SAN JUAN">SAN JUAN</option>
+						  <option value="SAN LUIS">SAN LUIS</option>
+						  <option value="SANTA FE">SANTA FE</option>
+						  <option value="SANTIAGO DEL ESTERO">SANTIAGO DEL ESTERO</option>
+						  <option value="TIERRA DEL FUEGO">TIERRA DEL FUEGO</option>
+						  <option value="TUCUMAN">TUCUMAN</option>
+						</select>
 				</div>
-				<div class="col-md-2">
-					<a class="btn btn-lg btn-default btn-block" target="_blank" href="files/proximamente.pdf">Descargar</a>
+				<div class="col-md-2 col-md-offset-2">
+					<a id="buttonDescargar" class="btn btn-lg btn-default btn-block disabled" target="_blank">Descargar</a>
 				</div>
 			</div>
 		</div>

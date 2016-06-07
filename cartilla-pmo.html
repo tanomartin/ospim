@@ -29,6 +29,19 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<script>
+	function activarDescarga() {
+		prov = document.getElementById("provincia").value;
+		if (prov != 0) {
+			document.getElementById("buttonDescargar").className = "btn btn-primary";
+			document.getElementById("buttonDescargar").href="files/cartilla/CARTILLA "+prov+".pdf"; 
+		} else {
+			document.getElementById("buttonDescargar").className = "btn btn-primary disabled";
+			document.getElementById("buttonDescargar").href="#"; 
+		}
+	}
+</script>
+
 </head>
 
 <body>
@@ -80,7 +93,30 @@
                     <div class="panel-body">
                         <h4>Cartilla</h4>
                         <p>Prestadores y Servicios Médicos</p>
-                        <a href="files/proximamente.pdf" target="_blank" class="btn btn-primary">Descargar</a>
+                        <p><select class="form-control" onchange="activarDescarga()" id="provincia">
+						  <option value="0" selected>Seleccione Provincia</option>
+						  <option value="BS AS">AMBA y PROV. BUENOS AIRES</option>
+						  <option value="CHACO">CHACO</option>	  
+						  <option value="CHUBUT">CHUBUT</option>
+						  <option value="CORDOBA">CORDOBA</option>
+						  <option value="CORRIENTES">CORRIENTES</option>
+						  <option value="ENTRE RIOS">ENTRE RIOS</option>
+						  <option value="FORMOSA">FORMOSA</option>
+						  <option value="JUJUY">JUJUY</option> 
+						  <option value="LA PAMPA">LA PAMPA</option>      
+						  <option value="MENDOZA">MENDOZA</option>
+						  <option value="MISIONES">MISIONES</option>
+						  <option value="NEUQUEN">NEUQUEN</option>
+						  <option value="RIO NEGRO">RIO NEGRO</option>
+						  <option value="SALTA">SALTA</option>
+						  <option value="SAN JUAN">SAN JUAN</option>
+						  <option value="SAN LUIS">SAN LUIS</option>
+						  <option value="SANTA FE">SANTA FE</option>
+						  <option value="SANTIAGO DEL ESTERO">SANTIAGO DEL ESTERO</option>
+						  <option value="TIERRA DEL FUEGO">TIERRA DEL FUEGO</option>
+						  <option value="TUCUMAN">TUCUMAN</option>
+						</select></p>
+                        <a id="buttonDescargar" target="_blank" class="btn btn-primary disabled">Descargar</a>
                     </div>
                 </div>
             </div>
@@ -93,8 +129,8 @@
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>P.M.O.</h4>
-                        <p>Plan Médico Obligatorio</p>
+                        <h4>P.M.O.</h4><br>
+                        <p>Plan Médico Obligatorio</p><br>
                         <a href="files/pmo_web.pdf" target="_blank" class="btn btn-primary">Descargar</a>
                     </div>
                 </div>
