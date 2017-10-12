@@ -9,8 +9,9 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>O.S.P.I.M. - Obra Social del Personal de la Industria
-	Maderera</title>
+<title>O.S.P.I.M. - Obra Social del Personal de la Industria Maderera</title>
+
+
 
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,18 +20,40 @@
 <link href="css/modern-business.css" rel="stylesheet">
 
 <!-- Custom Fonts -->
-<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"
-	type="text/css">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+
+<script>
+   $(document).ready(function(){
+      $("#mostrarmodal").modal("show");
+   });
+</script>  
+  
 </head>
 
 <body>
+	<div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+	   <div class="modal-dialog">
+	      <div class="modal-content">
+	         <div class="modal-header">
+	       	 	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	            <h3 style="color: red"><i class="glyphicon glyphicon-warning-sign"></i> Importante</h3>
+	     	 </div>
+	         <div class="modal-body">
+	            <h3>Requisitos para el libramiento de cheques con destino al pago de convenios de obra social</h3> 
+	            <p>1.- Por disposición del Banco de la Nación Argentia, los cheques propios -para el pago de acuerdos-, deberan ser librados a la orden del Banco de la Nación Argentina</p>
+				<p>2.- Al droso de los cheques debe consignarse, con firma del librador, la siguiente imputación: <b>Para ser depositado en la cuenta de OSPIM Nº 39750/12</b>
+				<p>3.- Deben coincidir las firmas del frente y del dorso del cheque</p>
+				<p><b>MEMORANDUM Y MODELO DE CHEQUE</b> <button type="button" class="btn btn-primary" onclick="window.open('files/memochequeospim.pdf', '_blank', 'fullscreen=yes')" aria-hidden="true">VER</button></p>
+	     	</div>
+	        <div class="modal-footer">
+	        	<a href="#" data-dismiss="modal" class="btn btn-danger">Cerrar</a>
+	      	</div>
+	      </div>
+	   </div>
+	</div>
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar"></nav>
@@ -70,11 +93,9 @@
 
 	<!-- Page Content -->
 	<div class="container">
-
-		<!-- Marketing Icons Section -->
 		<div class="row">
+			<h1 class="page-header">Bienvenidos a O.S.P.I.M.</h1>
 			<div class="col-lg-12">
-				<h1 class="page-header">Bienvenidos a O.S.P.I.M.</h1>
 				<p>Trabajamos para una mejor calidad de vida</p>
 				<p>Porque su salud y la de su familia es nuestra prioridad y
 					nuestra constante preocupación</p>
@@ -85,6 +106,11 @@
 					promoviendo al mismo tiempo el desarrollo solidario del sistema de
 					salud.</p>
 			</div>
+		</div>
+		
+		
+
+		<div class="row">
 			<div class="col-md-3">
 				<div class="panel panel-default">
 					<div class="panel-heading">
